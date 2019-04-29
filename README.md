@@ -1,24 +1,25 @@
-# Document Structure Continued
 
-## Problem Statement
+# Document Structure Lab
+
+## Learning Goals
+
+- Reinforce understanding of the basic HTML document structure
+- Recognize HTML comments
+- Expand understanding of the `head` section and its contents
+- Reinforce understanding of document structure through creation
+
+## Introduction
 
 Every HTML document has a specific set of required tags. Because these are
-required _every_ time we create a web page, it is valuable to gain a more
-in-depth understanding of what these tags do and why they are useful and how
-they work in context to the modern web.
+required _every_ time we create a web page, it is valuable to gain a deeper
+understanding of what these tags do and why they are useful and how they work in
+context to the modern web.
 
 In this lesson, we will be both reviewing what we have learned about a well
 formed HTML document and expanding a bit on the `doctype`, `html` and `head`
 tags, as well as introducing how to add comments within our HTML code.
 
-## Objectives
-
-1. Reinforce our understanding of the basic HTML document structure
-2. Introduce HTML comments
-3. Expand our understanding of the `head` section and its contents
-4. Reinforce our understanding of document structure through creation
-
-## Reinforce Our Understanding Of The Basic HTML Document Structure
+## Reinforce Understanding of the Basic HTML Document Structure
 
 Let's quickly review the bare essentials of an HTML document. In the provided
 `index.html` file, add the following tags:
@@ -28,23 +29,21 @@ Let's quickly review the bare essentials of an HTML document. In the provided
 * Opening and closing `head` tags nested inside the `html` tags
 * Opening and closing `body` tags nested inside the `html` tags
 
-If written correctly, running `learn` now will pass the **first** test of this
-lab.  **However** you will not be done yet! We have to make **all** the tests
-pass in order to make the test code happy! Fixing this first one means that we
-get to attack the next one. Let's get to it!
-
-Let's take a closer look at these tags.
+Run `learn` to pass the **first** test of this lab. **However** you will not be
+done yet! We have to make **all** the tests pass in order to make the test code
+happy! First, however, let's take a closer look at these tags so we know what
+they're doing.
 
 ### `<!DOCTYPE html>`
 
-At the top of every HTML document, you're always going to start off with the
-same element, `doctype`. In the early days of the internet, there were fewer
-standards, and it was important to declare the specific way we wanted browsers
-to interpret the file at the top of each file. Netscape and Internet Explorer
-would look for this declaration and handle the content differently depending on
-what it found. These days, every current browser is compatible with HTML5, and
-`doctype` is mainly used to tell the browser to render the page in standards
-compliant mode.
+At the top of every HTML document, you're always going to start with the same
+element: `doctype`. In the early days of the internet, there were fewer
+standards and it was important to declare the specific way we wanted browsers to
+interpret the file at the top of each file. Netscape and Internet Explorer would
+look for this declaration and handle the content differently depending on what
+it found. These days, every current browser is compatible with HTML5, and
+`doctype` is mainly used to tell the browser to render the page in
+standards-compliant mode.
 
 The `DOCTYPE` element, as with all HTML, starts with a `<`
 and ends with a `>`. Uniquely, the `doctype` tag starts with an exclamation
@@ -69,21 +68,21 @@ attribute to know when to prompt uses about translating web content.
 </html>
 ```
 
-## Introduce HTML Comments
+## Recognize HTML Comments
 
 Sometimes we want to leave notes either for ourselves or for other developers
 inside of our HTML files. An example might be a brief explanation of what some
-part of the code is doing, or an important message or reminder. We can write
-comments by wrapping the text we want like so:
+part of the code is doing, or an important message or reminder. We call these
+notes _comments_. We can write comments by wrapping the text we want like so:
 
 ```html
 <!-- This is a comment! -->
 ```
 
-Text included in a comment will not be visible on the webpage, but will be
+Text included in a comment will not be visible on the webpage but will be
 visible in the browser console and `.html` file.
 
-## Expand Our Understanding Of The `head` Section And Its Contents
+## Expand Understanding of the `head` Section and Its Contents
 
 Inside our `html` tags, we divide the page into two main sections, `head`, and
 `body`, which both play unique roles. The remainder of our HTML lessons will
@@ -93,8 +92,9 @@ The `head` section is not visible to a website visitor, but it contains a lot of
 useful info about our webpage.
 
 In the `head` section, we place a number of specific tags, most notably:
-  - `<link>`
-  - `<title>`
+
+- `<link>`
+- `<title>`
 
 Let's look at each of them in turn:
 
@@ -115,8 +115,8 @@ Most commonly, we'll use `<link>` to import CSS files. Like so:
 
 Linking stylesheets this way allows multi-page websites to share a source of
 styling content for every page, making for a consistent, easy to maintain file
-structure.  Often, on fully developed websites, multiple stylesheets are linked
-in the `head`.  For example, when doing the final polishing of a web site you
+structure. Often, on fully developed websites, multiple stylesheets are linked
+in the `head`. For example, when doing the final polishing of a web site you
 might see a series of `<link>` definitions like:
 
 ```html
@@ -127,20 +127,20 @@ might see a series of `<link>` definitions like:
 <link rel="stylesheet" type="text/css" href="typography.css">
 ```
 
-In this example we're getting some CSS information from the
+In this example, we're getting some CSS information from the
 [Bootstrap](https://getbootstrap.com/) project, we're integrating a company
 style standard, an engineering style standard, a style motif for the launch of
 "Project X" and then we're adding some specific rules about font display. You
 can bring in a **lot** of information with the `<link>` tag!
 
 This specific example aside, you'll be learning a lot more about linking
-files to create stylistic effect in later lessons.
+files to create a stylistic effect in later lessons.
 
 ### `title`
 
 One more common tag we find in the `head` is `title`. The `title`, as its name
 implies, is where the title of the webpage should be entered. Text added inside
-the `title` tags will appear up on your browser tab. Adding a title for our
+the `title` tags will appear on your browser tab. Adding a title for our
 `index.html` page would look something like:
 
 ```html
@@ -154,16 +154,14 @@ to keep the title brief, or it will not be fully visible.
 ## Reinforce Our Understanding Of Document Structure Through Creation
 
 Okay, time to put what we've learned to the test. To complete this lab, you must
-apply all the tags we've discussed in this lesson.  Run `learn` to see what is
+apply all the tags we've discussed in this lesson. Run `learn` to see what is
 required to pass each test. Each test will urge you on.
 
 ## Conclusion
 
-In this lesson, we've reviewed the basics of document structure, as well as what
-is typically contained within the `head`.  Using the `head` section, we are able
+In this lesson, we've reviewed the basics of HTML document structure, as well as what
+is typically contained within the `head`. Using the `head` section, we are able
 to add relevant data about our webpage as a whole. As a bonus surprise, by
 learning how to make our web pages _search engine friendly_, we've also dabbled
 a bit into the basics of Search Engine Optimization! We are now ready to take a
 deeper dive into the visual content of HTML pages.
-
-<p class='util--hide'>View <a href='https://learn.co/lessons/document-structure'>Document Structure</a> on Learn.co and start learning to code for free.</p>
